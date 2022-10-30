@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Mạch reset trâu tự động khi treo, điều khiển từ xa qua internet. Hỗ trợ hẹn giờ bật, tắt, reset trâu, tự động reset khi trâu treo. Theo dõi nhiệt độ, độ ẩm chuồng trâu thông qua smartphone."
+    />
+    <meta name="author" content="Bùi Gia Thịnh - 0387845097" />
+    <meta
+      property="og:image"
+      content="https://autominer.githsoft.com/img/1.jpg"
+    />
+    <title>AutoMiner</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/full-slider.css" rel="stylesheet" />
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "317056932254104");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=317056932254104&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Auto Miner</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/getapp">Get App </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.facebook.com/groups/1580280888687029/permalink/1788820507833065/"
+                >Flash Firmware
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://m.me/206075970192790"
+                >Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/shopee">Buy Now </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div
+            class="carousel-item active"
+            style="background-image: url('img/1.jpg')"
+          >
+            <!-- <div class="carousel-item active" style="background-image: url('https://lh4.googleusercontent.com/0rpj3ofhRqV2K_WbMiLb4a0oiJr1RjQfsmQNYMPCIXLX0gvwSzTk1eQF8O-jpz4HbDzBF1SQademYQ=w1920-h978-rw')"> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Thiết kế thông minh</h2>
+              <p>
+                Mạch được làm theo dạng module, có khả năng ghép nối dễ dàng,
+                phù hợp với mọi quy mô.
+              </p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('img/2.jpg')">
+            <!-- <div class="carousel-item" style="background-image: url('https://lh4.googleusercontent.com/r2mpvATnvqtfz6Y23SsYe1_wMBNbaGEEiOV1UAqICW6N9tktI7yumjZdNC_QSKM5C5_ss6CnHKCBHQ=w1920-h978-rw')"> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Chức năng vượt trội</h2>
+              <p>Hỗ trợ ứng dụng trên các nền tảng iOS và Android.</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('img/3.jpg')">
+            <!-- <div class="carousel-item" style="background-image: url('https://lh6.googleusercontent.com/JRKECyz96u_H6lP7df5jQqVDxgo322_q1_WmER9zjYj1pmVxlAcDBIGn9jwTnh7hS0nqB_Ea8kDD5g=w1920-h978-rw')"> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Phụ kiện đầy đủ</h2>
+              <p>
+                Trang bị tất cả các phụ kiện cần thiết để sử dụng.<br />Chỉ cần
+                cắm chạy, không phải cắt nối dây. Vô cùng đơn giản.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+    <!-- Page Content -->
+    <section class="py-5">
+      <div class="container">
+        <p>
+          <a target="_blank" rel="noopener noreferrer" href="/shopee/wifirelays"
+            ><img
+              src="https://cfshopeesg-a.akamaihd.net/file/c48825ff1dba5dfb92b30abdf57cad42"
+          /></a>
+        </p>
+        <p>
+          🏆 Mạch tự động kiểm tra trâu online, offline để thông báo đến người
+          dùng và tự động RESET nếu chạy AUTO.
+        </p>
+        <p>
+          🏆 Hẹn giờ bật tắt trâu vào giờ cao điểm theo từng ngày trong tuần
+          hoặc theo điều kiện xác định.
+        </p>
+        <p>
+          🏆 Điều khiển từ xa 3 chế độ độc lập qua app mọi lúc mọi nơi cả 2 chân
+          reset và power của trâu.
+        </p>
+        <p>
+          🏆 Mạch làm theo module ghép nối dễ dàng. Mỗi mạch cho 8 trâu, điều
+          khiển 2 chân reset và power.
+        </p>
+        <p>
+          🏆 Tích hợp tính năng đo nhiệt độ, độ ẩm. Có thể theo dõi qua đồ thị
+          trực quan.
+        </p>
+        <p>
+          🏆 Đầy đủ phụ kiện dây nối, chỉ việc cắm và dùng. Không cần cắt nối
+          dây tốn công sức.
+        </p>
+        <h4>Hướng dẫn phiên bản cũ</h4>
+        <a href="/huong-dan">Version 1</a> •
+        <a href="/huong-dan-v2">Version 2</a> •
+        <a href="/huong-dan-v3">Version 3</a>
+        <br />
+        <br />
+        <br />
+        <a href="#wifirelays"></a>
+        <h3>Phiên bản Mini giá rẻ</h3>
+        <h4><a href="/shopee/wifirelays">Mua ngay!!!</a></h4>
+        <br />
+        <iframe
+          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGSmartIoT%2Fposts%2F368884030578649&width=500"
+          width="500"
+          height="530"
+          style="border: none; overflow: hidden"
+          scrolling="no"
+          frameborder="0"
+          allowTransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+        <br /><br /><br /><br />
+        <h3>Kết nối</h3>
+        <a href="img/connect.png"
+          ><img width="500px" src="img/connect.png"
+        /></a>
+        <br />
+        <p>
+          Sau khi găm điện, chưa setup wifi thì đèn led sẽ nhấp nháy và phát ra
+          1 wifi có tên AUTOMINER_XXX như hình, kết nối vào wifi này và mở trình
+          duyệt kết nối vào 192.168.4.1 để nhập thông tin wifi cho mạch kết nối
+          vào.
+        </p>
+        <p>
+          Làm theo hình đến bước hiện trang QR sẽ kèm theo thông tin account để
+          đăng nhập vào app Blynk.
+        </p>
+        <p>
+          Nếu chỉ cần điều khiển từ xa thì quét QR trên app Blynk, dashboard sẽ
+          hiện ra nhanh chóng.
+        </p>
+        <p>
+          Cần hẹn giờ thì dùng thông tin account từ website cung cấp để login
+          vào app Blynk. Nhớ bấm dấu 3 chấm đổi host thành autominer.xyz
+        </p>
+        <h3>Setup WiFi</h3>
+        <a href="img/huong-dan-wifi.png"
+          ><img width="500px" src="img/huong-dan-wifi.png"
+        /></a>
+        <br />
+        <p>
+          Nếu cần đổi sang wifi khác thì gửi lệnh
+          <b>/set wifi {ssid}|{password}</b>
+        </p>
+        <h3>Hẹn giờ trên app Blynk</h3>
+        <p>
+          Cần đăng nhập để dùng chức năng hẹn giờ, nếu vào dashboard rồi (bằng
+          cách quét QR hoặc bấm nút OPEN BLYNK) thì gửi lệnh <b>/account</b> để
+          lấy thông tin đăng nhập.<br />
+          Sau đó thoát ra và login bằng tài khoản được trả về. Bấm vào nút 3
+          chấm <b>đổi host thành autominer.xyz</b> rồi đăng nhập
+        </p>
+        <p>
+          Stop dashboard để có thể cài đặt hẹn giờ tự động.<br />Sau khi hẹn giờ
+          xong bấm Play lại để điều khiển.
+        </p>
+        <a href="img/huong-dan-blynk.png"
+          ><img width="500px" src="img/huong-dan-blynk.png"
+        /></a>
+        <br />
+        <br />
+        <br />
+        <p>
+          <a target="_blank" rel="noopener noreferrer" href="/shopee/wifirelays"
+            ><img width="500px" src="img/shopee-freeship.png"
+          /></a>
+        </p>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; AutoMiner by Gith
+          <a href="https://www.facebook.com/tackelua">@tackelua</a>
+        </p>
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
